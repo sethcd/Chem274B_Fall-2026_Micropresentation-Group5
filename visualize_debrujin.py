@@ -19,7 +19,7 @@ def visualize_debrujin(graph: dict[str, list[str]]) -> None:
         for neighbor in neighbors:
             G.add_edge(node, neighbor)
 
-    #determining the positions of each node
+    #determining the positions of each node using spring layout
     position = nx.spring_layout(G)
 
     #creating a canvas to draw on
@@ -47,12 +47,12 @@ def visualize_debrujin(graph: dict[str, list[str]]) -> None:
         radius = 0.15 + (key * 0.2)
 
         nx.draw_networkx_edges(G, position, 
-                               ax=ax,
-                               edgelist=[(u, v, key)],
-                               arrows=True,
-                               arrowsize=20,
-                               node_size=1500,
-                               connectionstyle=f"arc3,rad={radius}"
+                               ax = ax,
+                               edgelist = [(u, v, key)],
+                               arrows = True,
+                               arrowsize = 20,
+                               node_size = 1500,
+                               connectionstyle = f"arc3,rad={radius}"
                                )
 
     ax.set_title("De Brujin Graph")

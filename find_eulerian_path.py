@@ -8,7 +8,7 @@ def find_eulerian_path(graph: dict[str, list[str]]) -> list[str]:
 
     Returns:
     --------
-        result: `list[str]`
+        result: `list[str]`. The resultant path of (k-1)-mer nodes travelled through.
 
     * **Algorithm**: Starting from a node, we follow an unused edge to a neighboring node. We continute traversing the graph
     unitl every edge has been visited. If we reach a dead end prematurely, we backtrack and try another
@@ -16,7 +16,7 @@ def find_eulerian_path(graph: dict[str, list[str]]) -> list[str]:
 
     * **TRADEOFFS**: This naive approach, while simple to understand, is extremely inefficient and has, in the worst-case, O(N!) 
     runtime complexity since so many edge orderings are explored. As this is a toy example, it does not matter here, but in a 
-    production implementation, we may look into implementing [Hierholzer's algorithm]("https://en.wikipedia.org/wiki/Eulerian_path#Hierholzer's_algorithm")
+    production implementation, we may look into implementing [Hierholzer's algorithm.]("https://en.wikipedia.org/wiki/Eulerian_path#Hierholzer's_algorithm")
     """
 
     #define total number of edges to track

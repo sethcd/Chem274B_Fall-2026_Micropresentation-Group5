@@ -11,7 +11,7 @@ def main():
     Example use script.
     """
     reads = ["ATG", "TGA", "GAT", "ATT", "TTA", "TAC", "ACA"]            #final seq should be ATGATTACA
-    graph = build_debruijn_graph(reads, k=3)
+    graph = build_debruijn_graph(reads, k = 3)
 
     #print adjacency list representative of the graph
     for node, neighbors in graph.items():

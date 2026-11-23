@@ -1,4 +1,3 @@
-
 def build_debruijn_graph(reads: list[str], k: int) -> dict[str, list[str]]:
     """
     Constructs a directed de Bruijn multigraph from DNA reads using only python built-ins.
