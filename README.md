@@ -1,2 +1,3 @@
-# Chem274B_Fall-2026_Micropresentation-Group5
+# Group 5 - De Brujin Graphs and Eulerian Traversal
+
 Repository for code associated with the Group 5 Micropresentation.
