@@ -1,7 +1,7 @@
-from de_brujin_graph import build_debruijn_graph
+from de_bruijn_graph import build_debruijn_graph
 from find_eulerian_path import find_eulerian_path
 from assemble_sequence import assemble_sequence
-from visualize_debrujin import visualize_debrujin
+from visualize_debruijn import visualize_debruijn
 
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -14,6 +14,7 @@ def main():
     graph = build_debruijn_graph(reads, k = 3)
 
     #print adjacency list representative of the graph
+    print("Adjacency list:\n")
     for node, neighbors in graph.items():
         print(f"{node} -> {neighbors}")
 
@@ -26,7 +27,7 @@ def main():
     print(f"The assembled sequence is {assembled_seq}")
 
     #visualize graph
-    visualize_debrujin(graph)
+    visualize_debruijn(graph)
 
 #driver code
 if __name__ == "__main__":

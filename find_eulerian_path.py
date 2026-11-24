@@ -1,10 +1,10 @@
 def find_eulerian_path(graph: dict[str, list[str]]) -> list[str]:
     """
-    Finds an Eulerian path in a De Brujin multigraph using DFS with backtracking.
+    Finds an Eulerian path in a De Bruijn multigraph using DFS with backtracking.
     
     Arguments:
     ----------
-        graph: `dict[, str, list[str]]`. The adjacency list of the De Brujin graph we are interested in finding a path through.
+        graph: `dict[, str, list[str]]`. The adjacency list of the De Bruijn graph we are interested in finding a path through.
 
     Returns:
     --------
@@ -35,7 +35,7 @@ def find_eulerian_path(graph: dict[str, list[str]]) -> list[str]:
         for i, neighbor in enumerate(graph[current_edge]):
 
             #We identify each edge by source node and it's associated index
-            #This is important in De Brujin multigraphs since two identical k-mers can generate
+            #This is important in De Bruijn multigraphs since two identical k-mers can generate
             #two distinct edges.
             edge = (current_edge, i)
 

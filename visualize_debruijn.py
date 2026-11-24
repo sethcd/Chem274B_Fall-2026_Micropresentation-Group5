@@ -1,13 +1,13 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 
-def visualize_debrujin(graph: dict[str, list[str]]) -> None:
+def visualize_debruijn(graph: dict[str, list[str]]) -> None:
     """
-    Visualizes a De Brujin graph using networkx.
+    Visualizes a De Bruijn graph using networkx.
 
     Arguments:
     ----------
-        graph: `dict[str, list[str]]`. The adjacency list representative of the De Brujin graph to visualize. 
+        graph: `dict[str, list[str]]`. The adjacency list representative of the De Bruijn graph to visualize. 
     """
 
     G = nx.MultiDiGraph()

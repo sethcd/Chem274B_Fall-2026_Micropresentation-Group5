@@ -1,11 +1,11 @@
 
 def assemble_sequence(path: list[str]) -> str:
     """
-    Reconstructs a DNA sequence from a Eulerian path through a DeBrujin graph.
+    Reconstructs a DNA sequence from a Eulerian path through a De Bruijn graph.
 
     Arguments:
     ----------
-        path: `list[str]`. Eulerian path through a De Brujin graph, represented by a list of strings.
+        path: `list[str]`. Eulerian path through a De Bruijn graph, represented by a list of strings.
 
     Returns:
     --------
